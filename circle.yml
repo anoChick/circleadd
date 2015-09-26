@@ -1,0 +1,20 @@
+machine:
+  timezone:
+    Asia/Tokyo
+  ruby:
+    version: 2.2.2
+
+dependencies:
+  bundler:
+    without: [production]
+
+test:
+  override:
+    - bundle exec rubocop
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - sh -e script/deploy_circle_ci.sh $CIRCLE_BRANCH:
+          timeout: 1500
