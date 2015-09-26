@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.3'
 gem 'mysql2', '~> 0.3.0'
 gem 'sass-rails', '~> 5.0'
@@ -20,8 +19,6 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'capistrano-rails', group: :development
-
-
 
 group :development, :test do
   gem 'factory_girl_rails'
@@ -44,4 +41,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'letter_opener'
 end
-
