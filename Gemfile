@@ -5,7 +5,8 @@ gem 'mysql2', '~> 0.3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
-
+gem 'libv8'
+gem 'therubyracer'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -18,7 +19,7 @@ gem 'gon'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
-gem 'capistrano-rails', group: :development
+
 
 group :development, :test do
   gem 'factory_girl_rails'
@@ -32,8 +33,8 @@ end
 
 group :development do
   gem 'bullet'
-  gem 'capistrano'
-  gem 'capistrano-rails'
+  gem 'capistrano', '~> 3.1'
+  gem 'capistrano-rails', '~> 1.1'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano3-unicorn'
